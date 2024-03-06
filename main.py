@@ -211,9 +211,9 @@ def analyze(code_path: str):
             with open('report.html', mode="w", encoding="utf-8") as message:
                 message.write(html_report)
 
-    with open(filename, mode="a", encoding="utf-8") as message:
+    with open('report.html', mode="a", encoding="utf-8") as message:
         message.write(html_end)
-    print(f"... wrote {filename}")
+    print(f"... wrote to report.html")
 
 
 if __name__ == "__main__":
